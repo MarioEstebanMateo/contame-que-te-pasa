@@ -15,12 +15,14 @@ Una aplicación web que utiliza inteligencia artificial para ayudar a los usuari
 ## 🛠️ Tecnologías
 
 ### Frontend
+
 - **React 18** - Biblioteca de interfaz de usuario
 - **Vite** - Herramienta de construcción rápida
 - **Tailwind CSS** - Framework de CSS utilitario
 - **Lucide React** - Iconos modernos
 
 ### Backend
+
 - **Node.js** - Runtime de JavaScript
 - **Express** - Framework web minimalista
 - **Groq SDK** - API de inteligencia artificial
@@ -29,24 +31,27 @@ Una aplicación web que utiliza inteligencia artificial para ayudar a los usuari
 
 ## 📋 Prerrequisitos
 
-- Node.js 18+ 
+- Node.js 18+
 - npm o yarn
 - Clave API de Groq (gratuita en [console.groq.com](https://console.groq.com/keys))
 
 ## 🚀 Instalación
 
 ### 1. Clona el repositorio
+
 ```bash
 git clone https://github.com/MarioEstebanMateo/contame-que-te-pasa.git
 cd contame-que-te-pasa
 ```
 
 ### 2. Instala las dependencias del frontend
+
 ```bash
 npm install
 ```
 
 ### 3. Instala las dependencias del backend
+
 ```bash
 cd server
 npm install
@@ -54,12 +59,14 @@ cd ..
 ```
 
 ### 4. Configura las variables de entorno
+
 ```bash
 cd server
 cp .env.example .env
 ```
 
 Edita el archivo `.env` y agrega tu clave API de Groq:
+
 ```env
 GROQ_API_KEY=tu_clave_api_de_groq_aqui
 PORT=3001
@@ -67,6 +74,7 @@ NODE_ENV=development
 ```
 
 ### 5. Inicia la aplicación
+
 ```bash
 # Opción 1: Ejecutar frontend y backend simultáneamente
 npm run dev:full
@@ -99,6 +107,7 @@ npm run server
 ## 🤖 Modelos de IA Soportados
 
 La aplicación utiliza los modelos de Groq:
+
 - **Mixtral 8x7B** (predeterminado) - Equilibrio entre velocidad y calidad
 - **Llama2 70B** - Respuestas más detalladas
 - **Gemma 7B** - Alternativa rápida y eficiente
@@ -106,26 +115,31 @@ La aplicación utiliza los modelos de Groq:
 ## 🔧 Scripts Disponibles
 
 ### Frontend
+
 - `npm run dev` - Inicia el servidor de desarrollo
 - `npm run build` - Construye la aplicación para producción
 - `npm run preview` - Vista previa de la construcción de producción
 
 ### Backend
+
 - `npm run server` - Inicia el servidor de backend
 - `cd server && npm run dev` - Inicia el servidor con recarga automática
 
 ### Conjunto
+
 - `npm run dev:full` - Inicia frontend y backend simultáneamente
 
 ## 🚀 Deployment
 
 ### Vercel (Recomendado)
+
 1. Fork este repositorio
 2. Conecta tu repositorio a Vercel
 3. Configura las variables de entorno en Vercel
 4. Despliega automáticamente
 
 ### Variables de entorno para producción
+
 ```env
 GROQ_API_KEY=tu_clave_api_de_groq
 NODE_ENV=production
@@ -148,6 +162,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 ## 🆘 Soporte
 
 Si tienes algún problema o pregunta:
+
 - Abre un [issue](https://github.com/MarioEstebanMateo/contame-que-te-pasa/issues)
 - Contacta al desarrollador
 
